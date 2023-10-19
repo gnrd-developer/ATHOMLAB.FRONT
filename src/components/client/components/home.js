@@ -73,7 +73,7 @@ function Home()
               <h4 className={homeStyle.neon}>{categoryItem.name}</h4>
               </div>
               <div className={homeStyle.cuerpo}>
-                <a href={'//localhost:3000/store/subcategory/' + categoryItem.name}>
+                <a href={'https://athomlab-production.up.railway.app/store/subcategory/' + categoryItem.name}>
                   <img src={categoryItem.image} alt=""/>
                 </a>
               </div>
