@@ -35,7 +35,7 @@ import {
 
 function Cart() {
   const [productList, setProductList] = useState([]);
-  const [salesList, setSalesList] = useState([]);
+  const [/*salesList*/, setSalesList] = useState([]);
   const [open, setOpen] = useState(false);
   /*const [details, setDetails] = useState([]);*/
   /*const [openDetail, setOpenDetail] = useState(false);*/
