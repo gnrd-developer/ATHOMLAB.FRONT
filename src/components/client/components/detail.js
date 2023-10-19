@@ -82,10 +82,10 @@ function Detail() {
   return (
     <div className={detailStyle.container}>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center my-4">
-            <button class="btn btn-primary btn-lg" onClick={() => window.history.back()}>
+      <div className="container">
+        <div className="row">
+          <div className="col-12 text-center my-4">
+            <button className="btn btn-primary btn-lg" onClick={() => window.history.back()}>
               Volver Atrás
             </button>
           </div>
