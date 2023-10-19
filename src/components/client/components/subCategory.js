@@ -43,7 +43,7 @@
             <h4 className={subCategoryStyle.neon}>{subCategoryList.name}</h4>
           </div>
           <div className={subCategoryStyle.cuerpo}>
-            <a href={'//localhost:3000/store/listado/' + subCategoryList.name}>
+            <a href={'https://frontathomlab-production.up.railway.app/store/listado/' + subCategoryList.name}>
               <img src={subCategoryList.image} alt=""/>
             </a>
           </div>
