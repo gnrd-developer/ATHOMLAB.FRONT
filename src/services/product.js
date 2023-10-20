@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const getAllProducts = ({ setProductList }) => {
     const productUrl = getApiUrl("product/all")
-    axios.get(productUrl, { withCredentials: false }).then((response) => {
+    axios.get(productUrl, { withCredentials: true }).then((response) => {
         setProductList(response.data)
     })
 }
@@ -73,7 +73,7 @@ export const createProduct = async (product) => {
 
 export const getProductById = async (id) => {
     const productUrl = getApiUrl(`product/${id}`)
-    const response = await axios.get(productUrl, { withCredentials: false })
+    const response = await axios.get(productUrl, { withCredentials: true })
     return response.data
 }
 
@@ -81,13 +81,13 @@ export const getProductById = async (id) => {
 
 export const getRelatedProducts = async ({category, id}) => {
     const productUrl = getApiUrl(`product/related/${category}/${id}`)
-    const response = await axios.get(productUrl, { withCredentials: false })
+    const response = await axios.get(productUrl, { withCredentials: true })
     return response.data
 }
 
 
 export const getProductsBySubCategory = async (sub) => {
     const productUrl = getApiUrl(`product/subcategory/${sub}`)
-    const response = await axios.get(productUrl, { withCredentials: false })
+    const response = await axios.get(productUrl, { withCredentials: true })
     return response.data
 }
