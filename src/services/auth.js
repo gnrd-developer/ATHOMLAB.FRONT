@@ -40,6 +40,13 @@ export const getUserDetails = ({ setUserRole }) => {
             localStorage.setItem("number", response.data.toString())
             window.dispatchEvent(new Event('storage'))
         })
+    }).catch(error => {
+        if(error.response && error.response.status === 500){
+            console.error("error gonzalo", error);
+        }
+        else{
+            console.error("error 2 gonzalo", error);
+        }
     })
 }
 
