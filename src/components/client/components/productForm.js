@@ -308,7 +308,7 @@ function ProductForm(props) {
                         label="Descripción"
                         name="description"
                         multiline
-                        rows={100} // Puedes ajustar este número según tus necesidades
+                        rows={5} // Puedes ajustar este número según tus necesidades
                         variant="outlined"
                         onChange={e => handleProductForm(e)}
                         value={product.description}
