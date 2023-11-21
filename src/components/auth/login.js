@@ -72,7 +72,6 @@ function Login() {
             src={require("../client/images/moon.png")}
             id="moon"
             alt=""
-            style={{ mixBlendMode: "screen" }}
             className={loginStyles.image}
           />
           <img
@@ -158,7 +157,6 @@ function Login() {
           <img
             src={require("../client/images/mountains_front.png")}
             alt=""
-            style={{ zIndex: "10", transform: "translateY(60px)" }}
             className={loginStyles.image}
           />
 

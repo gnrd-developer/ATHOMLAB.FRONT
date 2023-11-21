@@ -130,6 +130,7 @@ function Detail() {
               textDecoration="none"
               component="p"
               fontWeight={200}
+              className={detailStyle.pe}
             >
               {product && product.description}
             </Typography>
