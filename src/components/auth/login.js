@@ -72,6 +72,7 @@ function Login() {
             src={require("../client/images/moon.png")}
             id="moon"
             alt=""
+            style={{ mixBlendMode: "screen" }}
             className={loginStyles.image}
           />
           <img
