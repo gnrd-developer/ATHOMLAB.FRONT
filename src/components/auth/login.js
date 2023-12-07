@@ -179,12 +179,7 @@ function Login() {
           Nos esforzamos continuamente para encontrar los productos
           mas adecuados para el éxito de su proyecto con precios competitivos.
         </p>
-        <br/>
-        <br/>
-        <br>
-        </br>
-        <br>
-        </br>
+
         <h2 className="text-center text-sm mx-auto text-white">Nuestros Productos</h2>
         <div className="d-flex justify-content-center align-items-center" >
           <p className="text-center text-white">Clic en cada Categoría</p>
@@ -199,7 +194,7 @@ function Login() {
               <h4 className={loginStyles.neon}>{categoryItem.name}</h4>
               </div>
               <div className={loginStyles.cuerpo}>
-                <a href={'https://frontathomlab-production.up.railway.app/store/subcategory/' + categoryItem.name}>
+                <a href={'https://frontathomlab-production.up.railway.app/store/subcategory/store/subcategory/' + categoryItem.name}>{/*http://localhost:3000, https://frontathomlab-production.up.railway.app/store/subcategory/*/}
                   <img src={categoryItem.image} alt=""/>
                 </a>
               </div>
@@ -207,6 +202,8 @@ function Login() {
 
           ))}
         </Grid>
+
+
         <br></br>
         <br></br>
         <br></br>

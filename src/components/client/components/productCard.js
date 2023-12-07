@@ -4,7 +4,7 @@ function ProductCard(props) {
     const { product } = props
     return (
         <div className={cardStyle.container}>
-            <a className={cardStyle.card} href={'https://frontathomlab-production.up.railway.app/store/detail/' + product.id + '/' + product.subCategory.name}>
+            <a className={cardStyle.card} href={'https://frontathomlab-production.up.railway.app/store/detail/' + product.id + '/' + product.subCategory.name}>{/*http://localhost:3000/, https://frontathomlab-production.up.railway.app/*/}
                 {/*<div className={cardStyle.img_container}>
                     <img src={'http://localhost:8080/product/uploads/'+ product.image} alt='logo' className={cardStyle.img}/>
                 </div>*/}

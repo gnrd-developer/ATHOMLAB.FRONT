@@ -19,19 +19,17 @@
       <div>
 
           
-    <div className="container">
-      <div className="row">
-        <div className="col-12 text-center my-4">
-          <button className="btn btn-primary btn-lg" onClick={() => window.history.back()}>
-            Volver Atrás
-          </button>
+      <div className="container">
+        <div className="row">
+          <div className="col-12 text-center my-4">
+            <button className="btn btn-primary btn-lg" onClick={() => window.history.back()}>
+              Volver Atrás
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
       <div className={subCategoryStyle.container}>
-
-        
 
       <Grid className={subCategoryStyle.cajaC}>
         {subCategoryList.map(subCategoryList =>
@@ -43,7 +41,7 @@
             <h4 className={subCategoryStyle.neon}>{subCategoryList.name}</h4>
           </div>
           <div className={subCategoryStyle.cuerpo}>
-            <a href={'//frontathomlab-production.up.railway.app/store/listado/' + subCategoryList.name}>
+            <a href={'https://frontathomlab-production.up.railway.app/store/listado/' + subCategoryList.name}>{/*https://frontathomlab-production.up.railway.app/, http://localhost:3000/*/}
               <img src={subCategoryList.image} alt=""/>
             </a>
           </div>
@@ -51,8 +49,6 @@
           </Grid>)
         }
       </Grid>
-
-
 
       </div>
 

@@ -1,10 +1,11 @@
 .container {
     padding-bottom: 50px;
     background-color: #ffffff;
-    min-height: 90vh;
-    max-width: 100vw;
+    min-height: 100vh;
+    max-width: 120vw;
+    zoom: 0.8;
     overflow-x: hidden; /*esta linea es importante*/
-    overflow-y: hidden; /*esta linea es importante*/
+    overflow-y: visible; /*esta linea es importante*/
 }
 
 .img_container {
@@ -35,7 +36,7 @@
 }
 
 .stack {
-    padding-left: 3rem;
+    padding-left: 15rem;
 }
 
 .action {
@@ -76,8 +77,14 @@
 }
 
 .pe{
+    display: flex;
     overflow: auto;
     word-break: break-all;
+    padding: 5px;
+    white-space: pre-line;
+    font-size: 20px;   /* Color del texto */
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 600px) {

@@ -94,16 +94,15 @@ function Detail() {
 
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
-      <Grid container spacing={9} pt={1}>
+      
+      <Grid container spacing={9}>
+
+        {/*AQUI MI PRODUCTO CON FOTO Y DESCRIPCION ETC...*/}
         <Grid item xs={12} md={6}>
-          <Stack
-            direction="column"
-            alignItems="flex-start"
-            className={detailStyle.stack}
-            spacing={1}
-          >
+
+
+          <Stack direction="column" alignItems="flex-start" className={detailStyle.stack} spacing={1}>
+
             {roles.length > 1 ? (
               <Button
                 variant="text"
@@ -124,16 +123,9 @@ function Detail() {
               {product && product.name}
             </Typography>
 
-            <Typography
-              variant="span"
-              fontSize={16}
-              textDecoration="none"
-              component="p"
-              fontWeight={200}
-              className={detailStyle.pe}
-            >
+            <div className={detailStyle.pe}>
               {product && product.description}
-            </Typography>
+            </div>
 
 
             <div className={detailStyle.img_container}>
@@ -163,8 +155,8 @@ function Detail() {
             </div>
             */}
 
+            {/*los botones añadir compra, sumar y restar para la cantidad de productos a llevar*/}
             <div className={detailStyle.info}>
-              {/*los botones añadir compra, sumar y restar para la cantidad de productos a llevar*/}
               <div className={detailStyle.action}>
                 <IconButton
                   color="primary"
@@ -250,15 +242,22 @@ function Detail() {
                 Añadir A Orden De Compra
               </Button>
             </div>
+            
           </Stack>
+
+          
         </Grid>
 
+
+        {/*RELACIONADOS AQUI*/}
         <Grid item xs={12} md={6} className={detailStyle.related_grid}>
+
           <Chip
             icon={<ClassIcon />}
             label="Relacionados"
             className={detailStyle.chip}
           />
+
           <div className="container">
             {relatedProducts.map((related) => (
               <ProductCard product={related} key={related.id} />
