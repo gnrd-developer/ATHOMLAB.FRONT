@@ -182,7 +182,7 @@ function Login() {
 
         <h2 className="text-center text-sm mx-auto text-white">Nuestros Productos</h2>
         <div className="d-flex justify-content-center align-items-center" >
-          <p className="text-center text-white">Clic en cada Categoría</p>
+          <h2 className="text-center text-white">Clic en los Productos de abajo</h2>
         </div>
 
         <Grid className={loginStyles.cajaC}>
@@ -211,9 +211,9 @@ function Login() {
         <br></br>        
         
         <h2 className="text-center text-sm mx-auto text-white">Como funciona la App</h2>
-        <p className="text-center text-sm mx-auto text-white">
+        <h2 className="text-center text-sm mx-auto text-white">
           Haz clic en las imágenes.
-        </p>
+        </h2>
               
 
         <div>
