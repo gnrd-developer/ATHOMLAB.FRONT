@@ -62,6 +62,9 @@ import {
       return new Date(date).toLocaleDateString();
     };
 
+    
+    /* https://athomlab-production.up.railway.app/ , http://localhost:8080/*/
+
     function getDetail(id) {
       axios
         .get("https://athomlab-production.up.railway.app/saleDetail/" 
@@ -71,9 +74,6 @@ import {
           setOpenDetail(true);
         });
     };
-
-
-    {/* https://athomlab-production.up.railway.app/ , http://localhost:8080/*/}
 
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(5);
