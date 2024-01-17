@@ -107,7 +107,8 @@ function Cart() {
       <div className="container">
           <div className="row">
             <div className="col-12 text-center my-4">
-              <button className="btn btn-primary btn-lg" onClick={() => window.history.back()}>
+              <button className="btn btn-primary btn-lg" 
+              onClick={() => window.history.back()}>
                 Volver Atrás
               </button>
             </div>

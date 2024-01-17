@@ -296,7 +296,10 @@ function ProductForm(props) {
                     >
                                 {subCategoryList.map(categoryItem =>
 
-                                     <MenuItem key={categoryItem.id} value={categoryItem}>{categoryItem.name}</MenuItem>  
+                                     <MenuItem 
+                                     key={categoryItem.id} 
+                                     value={categoryItem}>{categoryItem.name}
+                                     </MenuItem>  
                                 
                                 )
                                 }

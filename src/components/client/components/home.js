@@ -60,7 +60,7 @@ function Home()
 
           <div className={homeStyle.title_container}>
             <Typography variant="span" fontSize={30} component="h2" ml={1} fontWeight={600}>
-              Todos los productos
+              Navega entre las siguientes categorias
             </Typography>
           </div>
 

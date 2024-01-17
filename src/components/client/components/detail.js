@@ -31,7 +31,8 @@ function Detail() {
   const [openPDF, setOpenPDF] = useState(false);
 
   const [relatedProducts, setRelatedProducts] = useState([]);
-  const [roles, setUserRole] = useState([]); //puede que este mala esta linea ya que deberia decir setRole y dice setUserRole
+  const [roles, setUserRole] = useState([]); 
+  //puede que este mala esta linea ya que deberia decir setRole y dice setUserRole
   const [showProductFeedback, setProductFeedback] = React.useState({
     show: false,
     status: false,
@@ -85,7 +86,8 @@ function Detail() {
       <div className="container">
         <div className="row">
           <div className="col-12 text-center my-4">
-            <button className="btn btn-primary btn-lg" onClick={() => window.history.back()}>
+            <button className="btn btn-primary btn-lg" 
+            onClick={() => window.history.back()}>
               Volver Atrás
             </button>
           </div>
@@ -95,13 +97,16 @@ function Detail() {
       <br></br>
       <br></br>
       
-      <Grid container spacing={9}>
+      <Grid container spacing={12}>
 
         {/*AQUI MI PRODUCTO CON FOTO Y DESCRIPCION ETC...*/}
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} 
+        className="d-flex justify-content-center align-items-center">
 
 
-          <Stack direction="column" alignItems="flex-start" className={detailStyle.stack} spacing={1}>
+          <Stack direction="column" alignItems="flex-start" 
+          className={detailStyle.stack} spacing={1} 
+          >
 
             {roles.length > 1 ? (
               <Button
@@ -180,7 +185,8 @@ function Detail() {
               </div>{" "}
               {/* lo que contiene este div son los botones para agregar y quitar la cantidad de productos a llevar*/}
 
-              <Button variant="contained" className="btn2" onClick={() => {setOpenPDF(true)}}>
+              <Button variant="contained" className="btn2" 
+              onClick={() => {setOpenPDF(true)}}>
                 PDF
               </Button>
 
@@ -250,7 +256,7 @@ function Detail() {
 
 
         {/*RELACIONADOS AQUI*/}
-        <Grid item xs={12} md={6} className={detailStyle.related_grid}>
+        <Grid item xs={12} md={12} className={detailStyle.related_grid}>
 
           <Chip
             icon={<ClassIcon />}

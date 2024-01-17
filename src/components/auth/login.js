@@ -180,9 +180,27 @@ function Login() {
           mas adecuados para el éxito de su proyecto con precios competitivos.
         </p>
 
-        <h2 className="text-center text-sm mx-auto text-white">Nuestros Productos</h2>
+        <h1 className="text-center text-sm mx-auto text-white">Nuestros Productos</h1>
         <div className="d-flex justify-content-center align-items-center" >
-          <h2 className="text-center text-white">Clic en los Productos de abajo</h2>
+          <h2 className="text-center text-white">Haz clic en los productos que se encuentran abajo</h2>
+        </div>
+        <div className="d-flex justify-content-center align-items-center">
+          <p className="text-center text-white pre text-wrap">
+            Al hacer clic en cada categoría, podrás navegar por las subcategorías que se encuentran en cada una de ellas. 
+            <br/>
+            Cada subcategoría contiene productos que puedes comprar. 
+            <br/>
+            Para realizar la compra, sigue las siguientes instrucciones:
+            <br/><br/>
+            *Añade los productos que buscas a tu carrito de compras.
+            <br/>
+            *Crea un usuario en la aplicación e inicia sesión con él.
+            <br/>
+            *Un asistente de la empresa se comunicará contigo para conversar sobre tus dudas,
+            la dirección de despacho, el monto y el método de pago.
+            <br/>
+            *También puedes comunicarte con nosotros a través del icono de WhatsApp. 
+          </p>
         </div>
 
         <Grid className={loginStyles.cajaC}>
@@ -210,7 +228,7 @@ function Login() {
         <br></br>
         <br></br>        
         
-        <h2 className="text-center text-sm mx-auto text-white">Como funciona la App</h2>
+        <h2 className="text-center text-sm mx-auto text-white">¿Como funciona la App?</h2>
         <h2 className="text-center text-sm mx-auto text-white">
           Haz clic en las imágenes.
         </h2>

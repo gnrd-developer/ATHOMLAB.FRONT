@@ -435,6 +435,23 @@ h2{
 
 }
 
+@media (max-width: 375px){
+    .product{
+        position: absolute;
+        top: 20%;
+        left: 28%;
+        transform: translate(-20%, -80%) scale(0);
+        height: 200px;
+        transition: 0.3s;
+        transition-delay: 0s;
+    }
+    
+    .muck:hover .product{
+        transform: translate(-150%, 20%) scale(1);
+        transition-delay: 0.3s;    
+    }
+}
+
 /*versión moviles*/
 @media (max-width: 414px) {
 
@@ -480,7 +497,7 @@ h2{
     .muck .product{
     position: absolute;
     top: 20%;
-    left: 88%;
+    left: 78%;
     transform: translate(-20%, -20%) scale(0);
     height: 200px;
     transition: 0.3s;
@@ -549,3 +566,4 @@ h2{
     justify-content: space-between;
     }
 }
+

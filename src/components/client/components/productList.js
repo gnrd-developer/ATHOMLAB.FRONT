@@ -93,7 +93,8 @@ function ProductList()
           <div className="container">
             <div className="row">
               <div className="col-12 text-center my-4">
-                <button className="btn btn-primary btn-lg" onClick={() => window.history.back()}>
+                <button className="btn btn-primary btn-lg" 
+                onClick={() => window.history.back()}>
                   Volver Atrás
                 </button>
               </div>
@@ -103,7 +104,8 @@ function ProductList()
           <Grid className='row'>
             {productList.map(productItem =>
 
-              <Grid onMouseOver={mostrarAvisoa} onMouseOut={ocultarAvisoa} className="col-md-4" key={productItem.id}>
+              <Grid onMouseOver={mostrarAvisoa} onMouseOut={ocultarAvisoa} 
+              className="col-md-4" key={productItem.id}>
                       {mostrara && (
                         <div className={productListStyle.alert} role="alert">
                           Haga Clic.
@@ -112,7 +114,8 @@ function ProductList()
                       <ProductCard product={productItem} />
                 
 
-                      <IconButton aria-label="add to shopping cart" color='primary' onClick={() => {
+                      <IconButton aria-label="add to shopping cart" color='primary' 
+                      onClick={() => {
                         addProduct(productItem, 1)
                         }}
                         className={homeStyle.add_button}>
@@ -125,9 +128,12 @@ function ProductList()
 
           <br></br>
 
-          <Snackbar open={showProductFeedback.show} autoHideDuration={2000} onClose={closeProductFeedback}
+          <Snackbar open={showProductFeedback.show} autoHideDuration={2000} 
+          onClose={closeProductFeedback}
             anchorOrigin={{ vertical: 'top', horizontal: 'center' }} >
-            <Alert onClose={closeProductFeedback} severity={showProductFeedback.status ? "success" : "error"} sx={{ width: '100%' }}>
+            <Alert onClose={closeProductFeedback} 
+            severity={showProductFeedback.status ? "success" : "error"} 
+            sx={{ width: '100%' }}>
               {showProductFeedback.infoText}
             </Alert>
           </Snackbar>
