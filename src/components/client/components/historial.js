@@ -64,12 +64,15 @@ import {
 
     function getDetail(id) {
       axios
-        .get("https://athomlab-production.up.railway.app/saleDetail/" + id, { withCredentials: true })
+        .get("https://athomlab-production.up.railway.app/saleDetail/" 
+        + id, { withCredentials: true })
         .then((response) => {
           setDetails(response.data);
           setOpenDetail(true);
         });
-    }
+    };
+
+
     {/* https://athomlab-production.up.railway.app/ , http://localhost:8080/*/}
 
     const [page, setPage] = React.useState(0);
