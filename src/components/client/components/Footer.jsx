@@ -1,12 +1,48 @@
 import React from "react";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import { useNavigate } from "react-router-dom";
 import { ModalFooter } from "react-bootstrap";
-import { IconButton, Badge} from '@mui/material';
+import { IconButton, Badge,
+  Alert,
+  Button,
+  Snackbar,
+  Stack,
+  TextField,
+  Typography} from '@mui/material';
+import { submitLogin } from "../../../services/auth";
+
+import loginStyles from "../../auth/login.module.css";
+
+
+var navigate = useNavigate();
+
+const [loginData, setLoginData] = useState({ userName: "", password: "" });
+const [wrongCredentials, setWrongCredentials] = useState({
+  wrongData: false,
+  infoText: "",
+});
+const [open, setOpen] = useState(false);
+
+
+const handleForm = (e) => {
+  const tempData = { ...loginData };
+  tempData[e.target.id] = e.target.value;
+  setLoginData(tempData);
+};
+
+
+const handleClose = (event, reason) => {
+  if (reason === "clickaway") {
+    return;
+  }
+  setOpen(false);
+};
 
 const Footer = () => {
   return (    
     <ModalFooter className="container text-center text-lg-start bg-black text-muted">
+
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <div className="me-5 d-none d-lg-block">
           <span className="text-white">Get connected with us:</span>
@@ -31,6 +67,7 @@ const Footer = () => {
             </div>
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
               <h6 className="text-uppercase fw-bold mb-4 text-white">
                 Descubre mas aquí ó Conversa con un asistente.
               </h6>
@@ -44,6 +81,7 @@ const Footer = () => {
                   <WhatsAppIcon color="primary" height={25}/>
                 </Badge>
               </IconButton>
+
             </div>
 
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -61,10 +99,107 @@ const Footer = () => {
 
 
       </section>
+      <section>
+
+        <div className="row text-center text-md-start mt-3">
+              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <Stack
+                  spacing={2}
+                  className={loginStyles.card}
+                  justifyContent="center"
+                  alignItems="center"
+                >
+
+                  <Typography variant="h4" component="h2" fontWeight={600}>
+                    Login
+                  </Typography>
+
+                  <img
+                    src={require("../client/images/logo.png")}
+                    alt="logo"
+                    height={100}
+                  />
+
+                  <TextField
+                    id="userName"
+                    label="Usuario"
+                    variant="outlined"
+                    onChange={(e) => handleForm(e)}
+                    value={loginData.userName}
+                  />
+
+                  <TextField
+                    type="password"
+                    id="password"
+                    label="Contraseña"
+                    variant="outlined"
+                    onChange={(e) => handleForm(e)}
+                    value={loginData.password}
+                  />
+
+                  <Button
+                    variant="contained"
+                    className="btn"
+                    onClick={() => {
+                      submitLogin({
+                        loginData,
+                        setWrongCredentials,
+                        navigate,
+                        setOpen,
+                      });
+                    }}
+                  >
+                    Iniciar Sesión
+                  </Button>
+
+                  <Button variant="text" color="success" href="/register">
+                    Crear cuenta
+                  </Button>
+
+                  <Snackbar
+                    open={open}
+                    autoHideDuration={1500}
+                    onClose={handleClose}
+                    anchorOrigin={{ vertical: "top", horizontal: "center" }}
+                  >
+                    <Alert
+                      onClose={handleClose}
+                      severity="error"
+                      sx={{ width: "100%" }}
+                    >
+                      {wrongCredentials.infoText}
+                    </Alert>
+
+                  </Snackbar>
+
+                </Stack>
+              </div>
+        </div>        
+      
+        <div className={loginStyles.sec}>{/*este es el div del quienes somos -- container-fluid*/}
+          <h2 className={loginStyles.somos}>Quienes somos?</h2>
+          <p className={loginStyles.quienes}>
+            Somos una empresa joven, fundada por profesionales entusiastas
+            y con experiencia en el mercado de equipos y accesorios en investigacion y equipamiento.
+            Buscamos  siempre los mejores productos hasta lograr la satisfacción total de nuestros clientes.
+            Trabajamos con productos y servicios 100% confiables
+            , buscando continuamente para nuestros clientes mejorar sus procesos
+            de trabajo y el desarrollo de su recurso humano
+            a través de una relación ética y transparente con el mercado.
+            Nos esforzamos continuamente para encontrar los productos
+            mas adecuados para el éxito de su proyecto con precios competitivos.
+          </p>
+
+        <Footer />        
+
+        </div>{/*este es el div del quienes somos*/}
+      
+      </section>
 
       <div className="text-center p-4 text-white">
         © Todos los derechos reservados Copyright: <a className="text-reset fw-bold" href="https://athomlab.pe/">  wwww.athomlab.pe</a>
       </div>
+
     </ModalFooter>
   );
 };
