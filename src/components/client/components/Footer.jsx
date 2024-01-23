@@ -115,7 +115,7 @@ const Footer = () => {
                   </Typography>
 
                   <img
-                    src={require("../client/images/logo.png")}
+                    src={require("../../client/images/logo.png")}
                     alt="logo"
                     height={100}
                   />
