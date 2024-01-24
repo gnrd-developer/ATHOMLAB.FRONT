@@ -1,10 +1,16 @@
 import {
-  Grid
+  Grid,
+  Alert,
+  Button,
+  Snackbar,
+  Stack,
+  TextField,
+  Typography
 } from "@mui/material";
 import React, { useState, useEffect } from "react";
-/*import { useNavigate } from "react-router-dom";*/
+import { useNavigate } from "react-router-dom";
 import loginStyles from "./login.module.css";
-/*import { submitLogin } from "../../services/auth";*/
+import { submitLogin } from "../../services/auth";
 import { getAllCategories } from '../../services/category'//, getBestProducts
 import Footer from '../client/components/Footer'
 
@@ -19,7 +25,7 @@ function Login() {
   },[])
 
 
-  /*
+  
   var navigate = useNavigate();
 
   const [loginData, setLoginData] = useState({ userName: "", password: "" });
@@ -29,19 +35,19 @@ function Login() {
   });
   const [open, setOpen] = useState(false);
 
-  */
+  
 
 
-  /*
+  
   const handleForm = (e) => {
     const tempData = { ...loginData };
     tempData[e.target.id] = e.target.value;
     setLoginData(tempData);
   };
 
-  */
+  
 
-  /*
+  
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {
       return;
@@ -49,7 +55,7 @@ function Login() {
     setOpen(false);
   };
 
-  */
+  
 
   window.addEventListener("scroll", function () {
     const value = window.scrollY;
@@ -87,7 +93,46 @@ function Login() {
 
           <br />
 
-          {/*<Stack
+          <img
+            src={require("../client/images/mountains_front.png")}
+            alt=""
+            style={{ zIndex: "10", transform: "translateY(60px)" }}
+            className={loginStyles.image}
+          />
+
+        </div>
+
+      </section>
+      
+      <div className={loginStyles.sec}>{/*este es el div del quienes somos -- container-fluid*/}
+        
+        <h1 className="text-center text-sm mx-auto text-white">Nuestros Productos</h1>
+        <div className="d-flex justify-content-center align-items-center" >
+          <h2 className="text-center text-white">Haz clic en los productos que se encuentran abajo</h2>
+        </div>
+
+        <Grid className={loginStyles.cajaC}>
+          {categoryList.map(categoryItem => (
+
+            <Grid className={loginStyles.caja} key={categoryItem.id}>
+              <div className={loginStyles.header}>
+              <h4 className={loginStyles.neon}>{categoryItem.name}</h4>
+              <h4 className={loginStyles.neon}>{categoryItem.name}</h4>
+              </div>
+              <div className={loginStyles.cuerpo}>
+                <a href={'https://frontathomlab-production.up.railway.app/store/subcategory/' + categoryItem.name}>{/*http://localhost:3000, https://frontathomlab-production.up.railway.app/store/subcategory/*/}
+                  <img src={categoryItem.image} alt=""/>
+                </a>
+              </div>
+            </Grid>
+
+          ))}
+        </Grid>
+
+
+        
+
+        <Stack
             spacing={2}
             className={loginStyles.card}
             justifyContent="center"
@@ -156,43 +201,7 @@ function Login() {
 
             </Snackbar>
 
-            </Stack>*/}
-
-          <img
-            src={require("../client/images/mountains_front.png")}
-            alt=""
-            style={{ zIndex: "10", transform: "translateY(60px)" }}
-            className={loginStyles.image}
-          />
-
-        </div>
-
-      </section>
-      
-      <div className={loginStyles.sec}>{/*este es el div del quienes somos -- container-fluid*/}
-        
-        <h1 className="text-center text-sm mx-auto text-white">Nuestros Productos</h1>
-        <div className="d-flex justify-content-center align-items-center" >
-          <h2 className="text-center text-white">Haz clic en los productos que se encuentran abajo</h2>
-        </div>
-
-        <Grid className={loginStyles.cajaC}>
-          {categoryList.map(categoryItem => (
-
-            <Grid className={loginStyles.caja} key={categoryItem.id}>
-              <div className={loginStyles.header}>
-              <h4 className={loginStyles.neon}>{categoryItem.name}</h4>
-              <h4 className={loginStyles.neon}>{categoryItem.name}</h4>
-              </div>
-              <div className={loginStyles.cuerpo}>
-                <a href={'https://frontathomlab-production.up.railway.app/store/subcategory/' + categoryItem.name}>{/*http://localhost:3000, https://frontathomlab-production.up.railway.app/store/subcategory/*/}
-                  <img src={categoryItem.image} alt=""/>
-                </a>
-              </div>
-            </Grid>
-
-          ))}
-        </Grid>
+        </Stack>
 
       <Footer />        
 

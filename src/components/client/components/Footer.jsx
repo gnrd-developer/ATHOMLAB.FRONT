@@ -1,45 +1,12 @@
-import { IconButton, Badge,
-  Alert,
-  Button,
-  Snackbar,
-  Stack,
-  TextField,
-  Typography} from '@mui/material';
-import React, { useState } from "react";
+import { IconButton, Badge} from '@mui/material';
+import React from "react";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import { useNavigate } from "react-router-dom";
 import { ModalFooter } from "react-bootstrap";
-import { submitLogin } from "../../../services/auth";
 import loginStyles from "../../auth/login.module.css";
 
 
 const Footer = () => {
-  
-
-  var navigate = useNavigate();
-
-  const [loginData, setLoginData] = useState({ userName: "", password: "" });
-  const [wrongCredentials, setWrongCredentials] = useState({
-    wrongData: false,
-    infoText: "",
-  });
-  const [open, setOpen] = useState(false);
-
-
-  const handleForm = (e) => {
-    const tempData = { ...loginData };
-    tempData[e.target.id] = e.target.value;
-    setLoginData(tempData);
-  };
-
-
-  const handleClose = (event, reason) => {
-    if (reason === "clickaway") {
-      return;
-    }
-    setOpen(false);
-  };
 
   
   return (    
@@ -101,82 +68,7 @@ const Footer = () => {
 
 
       </section>
-      <section>
-
-        <div className="row text-center text-md-start mt-3">
-              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <Stack
-                  spacing={2}
-                  className={loginStyles.card}
-                  justifyContent="center"
-                  alignItems="center"
-                >
-
-                  <Typography variant="h4" component="h2" fontWeight={600}>
-                    Login
-                  </Typography>
-
-                  <img
-                    src={require("../../client/images/logo.png")}
-                    alt="logo"
-                    height={100}
-                  />
-
-                  <TextField
-                    id="userName"
-                    label="Usuario"
-                    variant="outlined"
-                    onChange={(e) => handleForm(e)}
-                    value={loginData.userName}
-                  />
-
-                  <TextField
-                    type="password"
-                    id="password"
-                    label="Contraseña"
-                    variant="outlined"
-                    onChange={(e) => handleForm(e)}
-                    value={loginData.password}
-                  />
-
-                  <Button
-                    variant="contained"
-                    className="btn"
-                    onClick={() => {
-                      submitLogin({
-                        loginData,
-                        setWrongCredentials,
-                        navigate,
-                        setOpen,
-                      });
-                    }}
-                  >
-                    Iniciar Sesión
-                  </Button>
-
-                  <Button variant="text" color="success" href="/register">
-                    Crear cuenta
-                  </Button>
-
-                  <Snackbar
-                    open={open}
-                    autoHideDuration={1500}
-                    onClose={handleClose}
-                    anchorOrigin={{ vertical: "top", horizontal: "center" }}
-                  >
-                    <Alert
-                      onClose={handleClose}
-                      severity="error"
-                      sx={{ width: "100%" }}
-                    >
-                      {wrongCredentials.infoText}
-                    </Alert>
-
-                  </Snackbar>
-
-                </Stack>
-              </div>
-        </div>        
+      <section>      
       
         <div className={loginStyles.sec}>{/*este es el div del quienes somos -- container-fluid*/}
           <h2 className={loginStyles.somos}>Quienes somos?</h2>
