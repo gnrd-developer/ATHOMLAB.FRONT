@@ -14,31 +14,34 @@ import { submitLogin } from "../../../services/auth";
 import loginStyles from "../../auth/login.module.css";
 
 
-var navigate = useNavigate();
-
-const [loginData, setLoginData] = useState({ userName: "", password: "" });
-const [wrongCredentials, setWrongCredentials] = useState({
-  wrongData: false,
-  infoText: "",
-});
-const [open, setOpen] = useState(false);
-
-
-const handleForm = (e) => {
-  const tempData = { ...loginData };
-  tempData[e.target.id] = e.target.value;
-  setLoginData(tempData);
-};
-
-
-const handleClose = (event, reason) => {
-  if (reason === "clickaway") {
-    return;
-  }
-  setOpen(false);
-};
-
 const Footer = () => {
+  
+
+  var navigate = useNavigate();
+
+  const [loginData, setLoginData] = useState({ userName: "", password: "" });
+  const [wrongCredentials, setWrongCredentials] = useState({
+    wrongData: false,
+    infoText: "",
+  });
+  const [open, setOpen] = useState(false);
+
+
+  const handleForm = (e) => {
+    const tempData = { ...loginData };
+    tempData[e.target.id] = e.target.value;
+    setLoginData(tempData);
+  };
+
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpen(false);
+  };
+
+  
   return (    
     <ModalFooter className="container text-center text-lg-start bg-black text-muted">
 
