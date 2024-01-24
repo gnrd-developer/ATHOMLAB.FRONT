@@ -1,8 +1,3 @@
-import React, { useState } from "react";
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import { useNavigate } from "react-router-dom";
-import { ModalFooter } from "react-bootstrap";
 import { IconButton, Badge,
   Alert,
   Button,
@@ -10,8 +5,12 @@ import { IconButton, Badge,
   Stack,
   TextField,
   Typography} from '@mui/material';
+import React, { useState, useEffect } from "react";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import { useNavigate } from "react-router-dom";
+import { ModalFooter } from "react-bootstrap";
 import { submitLogin } from "../../../services/auth";
-
 import loginStyles from "../../auth/login.module.css";
 
 
