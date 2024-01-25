@@ -73,7 +73,8 @@ function Home()
               <h4 className={homeStyle.neon}>{categoryItem.name}</h4>
               </div>
               <div className={homeStyle.cuerpo}>
-                <a href={'https://frontathomlab-production.up.railway.app/store/subcategory/' + categoryItem.name}>{/*http://localhost:3000/, https://frontathomlab-production.up.railway.app/*/}
+                <a href={'http://localhost:3000/store/subcategory/' + 
+                categoryItem.name}>{/*http://localhost:3000/, https://frontathomlab-production.up.railway.app/*/}
                   <img src={categoryItem.image} alt=""/>
                 </a>
               </div>
@@ -86,7 +87,8 @@ function Home()
 
           <Snackbar open={showProductFeedback.show} autoHideDuration={2000} onClose={closeProductFeedback}
             anchorOrigin={{ vertical: 'top', horizontal: 'center' }} >
-            <Alert onClose={closeProductFeedback} severity={showProductFeedback.status ? "success" : "error"} sx={{ width: '100%' }}>
+            <Alert onClose={closeProductFeedback} severity={showProductFeedback.status ? "success" : "error"} 
+            sx={{ width: '100%' }}>
               {showProductFeedback.infoText}
             </Alert>
           </Snackbar>

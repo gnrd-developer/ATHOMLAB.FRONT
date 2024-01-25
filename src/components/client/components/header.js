@@ -130,7 +130,8 @@ function Header() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
 
-              <IconButton onMouseOver={mostrarAvisoc} onMouseOut={ocultarAvisoc} className="active navbar-link" href='/store/' size="large">
+              <IconButton onMouseOver={mostrarAvisoc} onMouseOut={ocultarAvisoc} className="active navbar-link" 
+              href='/store/' size="large">
                 <Badge>
                   {mostrarc && (
                       <div className={headerStyles.alert} role="alert">
@@ -141,7 +142,8 @@ function Header() {
                 </Badge>
               </IconButton>
 
-              <IconButton onMouseOver={mostrarAvisos} onMouseOut={ocultarAvisos} className="active navbar-link" href='/store/cart' size="large">
+              <IconButton onMouseOver={mostrarAvisos} onMouseOut={ocultarAvisos} className="active navbar-link" 
+              href='/store/cart' size="large">
                 <Badge badgeContent={number}>
                   {mostrars && (
                     <div className={headerStyles.alert} role="alert">
@@ -152,7 +154,8 @@ function Header() {
                 </Badge>
               </IconButton>
 
-              <IconButton onMouseOver={mostrarAvisoi} onMouseOut={ocultarAvisoi} className="active navbar-link" href='/store/historial' size="large">
+              <IconButton onMouseOver={mostrarAvisoi} onMouseOut={ocultarAvisoi} className="active navbar-link" 
+              href='/store/historial' size="large">
                 {mostrari && (
                   <div className={headerStyles.alert} role="alert">
                     Mis Compras.
@@ -161,7 +164,8 @@ function Header() {
                 <HistoryIcon color="primary" />
               </IconButton>
 
-              <IconButton onMouseOver={mostrarAvisof} onMouseOut={ocultarAvisof} target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100068138528772">
+              <IconButton onMouseOver={mostrarAvisof} onMouseOut={ocultarAvisof} target="_blank" 
+              rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100068138528772">
                 {mostrarf && (
                       <div className={headerStyles.alert} role="alert">
                         Valla A Facebook.
@@ -170,7 +174,9 @@ function Header() {
                 <FacebookIcon color="primary"/>
               </IconButton>
 
-              <IconButton onMouseOver={mostrarAvisow} onMouseOut={ocultarAvisow} target="_blank" rel="noopener noreferrer" href="https://wa.me/51933504373/?text=Hola,%20Muy%20buenas%20tardes.%20Le%20hablo%20para%20hacerle%20algunas%20consultas" size="large">
+              <IconButton onMouseOver={mostrarAvisow} onMouseOut={ocultarAvisow} target="_blank" 
+              rel="noopener noreferrer" 
+              href="https://wa.me/51933504373/?text=Hola,%20Muy%20buenas%20tardes.%20Le%20hablo%20para%20hacerle%20algunas%20consultas" size="large">
                 {mostrarw && (
                     <div className={headerStyles.alert} role="alert">
                       Valla A WhatsApp.
@@ -179,7 +185,8 @@ function Header() {
                 <WhatsAppIcon color="primary"/>
               </IconButton>
 
-              <IconButton onMouseOver={mostrarAviso} onMouseOut={ocultarAviso} aria-label="delete" color='error' size="large" onClick={closeSession}>
+              <IconButton onMouseOver={mostrarAviso} onMouseOut={ocultarAviso} aria-label="delete" 
+              color='error' size="large" onClick={closeSession}>
                 {mostrar && (
                   <div className={headerStyles.alert} role="alert">
                     Ingrese o Regístrese.
