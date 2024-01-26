@@ -68,9 +68,10 @@ const Footer = () => {
 
 
       </section>
-      <section>      
+
+      <section>
       
-        <div className={loginStyles.sec}>{/*este es el div del quienes somos -- container-fluid*/}
+        <div className={loginStyles.sec2}>{/*este es el div del quienes somos -- container-fluid*/}
           <h2 className={loginStyles.somos}>Quienes somos?</h2>
           <p className={loginStyles.quienes}>
             Somos una empresa joven, fundada por profesionales entusiastas
@@ -82,9 +83,7 @@ const Footer = () => {
             a través de una relación ética y transparente con el mercado.
             Nos esforzamos continuamente para encontrar los productos
             mas adecuados para el éxito de su proyecto con precios competitivos.
-          </p>
-
-        <Footer />        
+          </p>   
 
         </div>{/*este es el div del quienes somos*/}
       

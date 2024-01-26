@@ -30,14 +30,6 @@
         </div>
       </div>
 
-      <div className="d-flex justify-content-center align-items-center">
-        <h1 className="text-center pre text-wrap">
-          Bienvenido a las Categorias.
-          <br/>
-          Aqui puedes hacer clic en cada categoria para ver nuestros productos
-        </h1>
-      </div>
-
       <br/>
 
       <div className={subCategoryStyle.container}>
@@ -52,7 +44,7 @@
             <h4 className={subCategoryStyle.neon}>{subCategoryList.name}</h4>
           </div>
           <div className={subCategoryStyle.cuerpo}>
-            <a href={'http://localhost:3000/store/listado/' 
+            <a href={'https://frontathomlab-production.up.railway.app/store/listado/' 
             + subCategoryList.name}>{/*https://frontathomlab-production.up.railway.app/, 
             http://localhost:3000/*/}
               <img src={subCategoryList.image} alt=""/>
