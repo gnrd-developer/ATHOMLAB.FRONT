@@ -49,6 +49,13 @@ export const getShoppingList = ({ setProductList }) => {
 
     axios.get(listUrl, { withCredentials: true }).then(response => {
         setProductList(response.data)
+    }).catch(error => {
+        if(error.response && error.response.status === 500){
+            console.error("error gonzalo", error);
+        }
+        else{
+            console.error("error 2 gonzalo", error);
+        }
     })
 }
 
@@ -71,5 +78,12 @@ export const getSaleList = ({ setSalesList }) => {
     const listUrl = getApiUrl("sale/client")
     axios.get(listUrl, { withCredentials: true }).then(response => {
         setSalesList(response.data)
+    }).catch(error => {
+        if(error.response && error.response.status === 500){
+            console.error("error gonzalo", error);
+        }
+        else{
+            console.error("error 2 gonzalo", error);
+        }
     })
 }
