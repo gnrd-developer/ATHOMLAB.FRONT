@@ -128,69 +128,34 @@
 }
 
 @media only screen and (max-width: 430px) {
+
     .container{
-        width: 60%; /* Ajusta el ancho a un porcentaje menor */
-        padding-left: 5px;
-        padding-right: 5px;
-        padding: 10px 10px; /* Reduce el relleno */
-        font-size: 0.8rem; /* Reduce el tamaño de la fuente */
-    }
-
-    .cajaC
-    {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* centra los elementos horizontalmente */
-    align-items: center;
-    }
-
-    .caja
-    {
-    background-color: #ffffff;
-    border-radius: 100px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    margin: 30px;
-    width: 300px;
-    height: 400px;
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: space-between;
-    }
-
-    .header
-    {
-        position: relative;
-        background-color: #000000;
-        padding: 100px;
-        font-size: 4px;    
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        /*display: flex;*/
-        align-items: center;
-    }
-
-    .cuerpo
-    {
-        padding: 50px;
-    }
-
-    .cuerpo2
-    {
-        justify-content: center;
-        padding: 20px;
-    }
-
-    .neon
-    {
-        position: absolute;
-        transform: translate(-60%, -50%);
-        font-size: 4.5em;
-        padding: 1px;
-        border: none;
-        padding: 5px;
-    }
+        padding: 10px;
+      }
+    
+      .cajaC{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-flow: dense;
+        padding: 0;
+      }
+    
+      .caja{
+        width: 250px; /* Reduce el ancho de la caja */
+        height: 500px; /* Reduce la altura de la caja */
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente en general */
+      }
+    
+      .header{
+        padding: 90px; /* Reduce el relleno del header */
+        font-size: 3px; /* Reduce el tamaño de la fuente en el header */
+      }
+    
+      .neon{
+        font-size: 8em; /* Reduce el tamaño de la fuente del texto neón */
+        transform: translate(-35%, -50%);
+      }
+    
+      .caja img{
+        height: 70%; /* Aumenta la altura de la imagen para ocupar más espacio */
+      }
 }

@@ -40,6 +40,8 @@ esta la saque despues de la linea 17
 <Typography mt={1} variant="p" fontSize={22} component="p" fontWeight={700}>
   ${product.price.toFixed(2)}
 </Typography>
+
+http://localhost:3000
 */
 
 

@@ -473,7 +473,7 @@ h2{
 }
 
 /*versión moviles*/
-@media (max-width: 414px) {
+@media (max-width: 430px) {
 
     .card {
         position: relative;
@@ -542,7 +542,7 @@ h2{
     .neon
     {
         position: absolute;
-        transform: translate(-22%, -50%);
+        transform: translate(-10%, -50%);
         font-size: 7em;
         padding: 30px;
         border: none;
