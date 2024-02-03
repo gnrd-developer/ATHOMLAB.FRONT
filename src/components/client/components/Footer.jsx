@@ -57,10 +57,9 @@ const Footer = () => {
               <h6 className="text-uppercase fw-bold mb-4 text-white">ESCRÍBENOS</h6>
               <p className="text-white">
                 <i className="fas fa-envelope me-3"></i>
-                gnrd.developer@gmail.com
+                athomlab.pe@gmail.com
               </p>
               <p className="text-white"><i className="fas fa-phone me-3"></i> + 51933504373</p>
-              <p className="text-white"><i className="fas fa-print me-3"></i> + 56954606577</p>
             </div>
             
           </div>
@@ -90,7 +89,7 @@ const Footer = () => {
       </section>
 
       <div className="text-center p-4 text-white">
-        © Todos los derechos reservados Copyright: <a className="text-reset fw-bold" href="https://athomlab.pe/">  wwww.athomlab.pe</a>
+        © Todos los derechos reservados Copyright: <a className="text-reset fw-bold" href="https://frontathomlab-production.up.railway.app/">  wwww.athomlab.pe</a>
       </div>
 
     </ModalFooter>

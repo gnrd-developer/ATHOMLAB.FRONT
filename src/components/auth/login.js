@@ -67,6 +67,25 @@ function Login() {
 
   return (
     <div className={loginStyles.container}>
+
+        <Grid className={loginStyles.cajaC}>
+          {categoryList.map(categoryItem => (
+
+            <Grid className={loginStyles.caja} key={categoryItem.id}>
+              <div className={loginStyles.header}>
+              <h4 className={loginStyles.neon}>{categoryItem.name}</h4>
+              <h4 className={loginStyles.neon}>{categoryItem.name}</h4>
+              </div>
+              <div className={loginStyles.cuerpo}>
+                <a href={'https://frontathomlab-production.up.railway.app/store/subcategory/' 
+                + categoryItem.name}>{/*http://localhost:3000, https://frontathomlab-production.up.railway.app/store/subcategory/*/}
+                  <img src={categoryItem.image} alt=""/>
+                </a>
+              </div>
+            </Grid>
+
+          ))}
+        </Grid>
       
       <section className={loginStyles.section}>
 
@@ -106,27 +125,8 @@ function Login() {
         
         <h1 className="text-center text-sm mx-auto text-white">Nuestros Productos</h1>
         <div className="d-flex justify-content-center align-items-center" >
-          <h2 className="text-center text-white">Haz clic en los productos que se encuentran abajo</h2>
+          <h2 className="text-center text-white">Navega entre las siguientes categorias</h2>
         </div>
-
-        <Grid className={loginStyles.cajaC}>
-          {categoryList.map(categoryItem => (
-
-            <Grid className={loginStyles.caja} key={categoryItem.id}>
-              <div className={loginStyles.header}>
-              <h4 className={loginStyles.neon}>{categoryItem.name}</h4>
-              <h4 className={loginStyles.neon}>{categoryItem.name}</h4>
-              </div>
-              <div className={loginStyles.cuerpo}>
-                <a href={'https://frontathomlab-production.up.railway.app/store/subcategory/' 
-                + categoryItem.name}>{/*http://localhost:3000, https://frontathomlab-production.up.railway.app/store/subcategory/*/}
-                  <img src={categoryItem.image} alt=""/>
-                </a>
-              </div>
-            </Grid>
-
-          ))}
-        </Grid>
 
 
         <Stack
