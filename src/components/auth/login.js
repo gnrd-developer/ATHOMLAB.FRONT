@@ -67,6 +67,13 @@ function Login() {
 
   return (
     <div className={loginStyles.container}>
+      
+      <div className={loginStyles.sec}>{/*este es el div del quienes somos -- container-fluid*/}
+        
+        <h1 className="text-center text-sm mx-auto text-white">Nuestros Productos</h1>
+        <div className="d-flex justify-content-center align-items-center" >
+          <h2 className="text-center text-white">Navega entre las siguientes categorias</h2>
+        </div>
 
         <Grid className={loginStyles.cajaC}>
           {categoryList.map(categoryItem => (
@@ -120,13 +127,6 @@ function Login() {
         </div>
 
       </section>
-      
-      <div className={loginStyles.sec}>{/*este es el div del quienes somos -- container-fluid*/}
-        
-        <h1 className="text-center text-sm mx-auto text-white">Nuestros Productos</h1>
-        <div className="d-flex justify-content-center align-items-center" >
-          <h2 className="text-center text-white">Navega entre las siguientes categorias</h2>
-        </div>
 
 
         <Stack
