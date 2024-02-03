@@ -57,13 +57,13 @@ function Login() {
 
   
 
-  window.addEventListener("scroll", function () {
+  /*window.addEventListener("scroll", function () {
     const value = window.scrollY;
     const stars = document.getElementById("stars");
     const moon = document.getElementById("moon");
     stars.style.left = value * 0.25 + "px";
     moon.style.top = value * 1.05 + "px";
-  });
+  });*/
 
   return (
     <div className={loginStyles.container}>
@@ -93,40 +93,6 @@ function Login() {
 
           ))}
         </Grid>
-      
-      <section className={loginStyles.section}>
-
-        <div>
-          <img
-            src={require("../client/images/stars.png")}
-            id="stars"
-            alt=""
-            className={loginStyles.image}
-          />
-          <img
-            src={require("../client/images/moon.png")}
-            id="moon"
-            alt=""
-            style={{ mixBlendMode: "screen" }}
-            className={loginStyles.image}
-          />
-          <img
-            src={require("../client/images/mountains_behind.png")}
-            alt=""
-            className={loginStyles.image}
-          />
-          {/*<h2 className={loginStyles.text} id='text'>AthomLab Start</h2>*/}
-
-          <img
-            src={require("../client/images/mountains_front.png")}
-            alt=""
-            style={{ zIndex: "10", transform: "translateY(10px)" }}
-            className={loginStyles.image}
-          />
-
-        </div>
-
-      </section>
 
 
         <Stack
@@ -209,3 +175,43 @@ function Login() {
 }
 
 export default Login;
+
+
+/*
+
+
+      
+      <section className={loginStyles.section}>
+
+        <div>
+          <img
+            src={require("../client/images/stars.png")}
+            id="stars"
+            alt=""
+            className={loginStyles.image}
+          />
+          <img
+            src={require("../client/images/moon.png")}
+            id="moon"
+            alt=""
+            style={{ mixBlendMode: "screen" }}
+            className={loginStyles.image}
+          />
+          <img
+            src={require("../client/images/mountains_behind.png")}
+            alt=""
+            className={loginStyles.image}
+          />
+
+          <img
+            src={require("../client/images/mountains_front.png")}
+            alt=""
+            style={{ zIndex: "10", transform: "translateY(10px)" }}
+            className={loginStyles.image}
+          />
+
+        </div>
+
+      </section>
+
+*/
