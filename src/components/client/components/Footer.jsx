@@ -30,7 +30,7 @@ const Footer = () => {
               </h6>
               <p className="text-white">
                 Creamos esta aplicación para que los clientes
-                de Expansiva Eirl gestionen sus pedidos.
+                de AthomLab S.A.C gestionen sus pedidos.
                 Y así poder agilizar sus ordenes de compra de forma simple.
               </p>
             </div>

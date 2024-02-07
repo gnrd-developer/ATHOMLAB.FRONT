@@ -51,7 +51,7 @@ function Home()
               </Typography>
 
               <Typography variant="p" fontSize={20} component="h2" ml={1} fontWeight={400}>
-                A Tu Servicio
+              Soluciones tecnológicas en investigación y equipamiento
               </Typography>
 
           </div>
