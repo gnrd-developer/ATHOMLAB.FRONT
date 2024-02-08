@@ -75,11 +75,11 @@ function Login() {
 
         <br/>
 
-        <div className={loginStyles.logoprincipal}>
-          <img src={require('../client/images/logo.png')} alt='logo'/>
+        <div className="col-sm-6 col-xs-4 mx-auto d-flex justify-content-center align-items-center">
+          <img src={require('../client/images/logo.png')} alt='logo' height={'150px'}/>
         </div>
         
-        <h1 className="d-flex justify-content-center align-items-center text-center text-sm mx-auto text-white">Soluciones tecnológicas en investigación y equipamiento</h1>
+        <h1 className="col-sm-6 col-xs-4 mx-auto d-flex justify-content-center align-items-center align-items-center text-center text-sm mx-auto text-white">Soluciones tecnológicas en investigación y equipamiento</h1>
         <div className="d-flex justify-content-center align-items-center">
           <h2 className="text-center text-white">Navega entre las siguientes categorias</h2>
         </div>
