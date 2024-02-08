@@ -13,6 +13,7 @@ import loginStyles from "./login.module.css";
 import { submitLogin } from "../../services/auth";
 import { getAllCategories } from '../../services/category'//, getBestProducts
 import Footer from '../client/components/Footer'
+import Header from './components/header'
 
 function Login() {
 
@@ -67,11 +68,17 @@ function Login() {
 
   return (
     <div className={loginStyles.container}>
+
+      <Header />
       
       <div className={loginStyles.sec}>{/*este es el div del quienes somos -- container-fluid*/}
+
+        <div className="d-flex justify-content-center align-items-center">
+          <img src={require('../client/images/logo.png')} alt='logo' height={100}/>
+        </div>
         
         <h1 className="text-center text-sm mx-auto text-white">Soluciones tecnológicas en investigación y equipamiento</h1>
-        <div className="d-flex justify-content-center align-items-center" >
+        <div className="d-flex justify-content-center align-items-center">
           <h2 className="text-center text-white">Navega entre las siguientes categorias</h2>
         </div>
 
