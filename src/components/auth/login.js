@@ -79,7 +79,7 @@ function Login() {
           <img src={require('../client/images/logo.png')} alt='logo' height={'200px'}/>
         </div>
         
-        <h1 className="col-sm-6 col-xs-4 mx-auto d-flex justify-content-center align-items-center 
+        <h1 className="col-sm-6 col-xs-4 mx-auto d-flex justify-content-center 
         align-items-center text-center text-white">
           Soluciones tecnológicas en investigación y equipamiento</h1>
         <div className="d-flex justify-content-center align-items-center">
