@@ -13,7 +13,7 @@ import loginStyles from "./login.module.css";
 import { submitLogin } from "../../services/auth";
 import { getAllCategories } from '../../services/category'//, getBestProducts
 import Footer from '../client/components/Footer'
-import Header from './components/header'
+import Header from '../client/components/header'
 
 function Login() {
 
