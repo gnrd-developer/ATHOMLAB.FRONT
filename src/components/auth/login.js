@@ -68,13 +68,13 @@ function Login() {
 
   return (
     <div className={loginStyles.container}>
-
-      <Header />
       
       <div className={loginStyles.sec}>{/*este es el div del quienes somos -- container-fluid*/}
 
+        <Header />
+
         <div className="d-flex justify-content-center align-items-center">
-          <img src={require('../client/images/logo.png')} alt='logo' height={100}/>
+          <img src={require('../client/images/logo.png')} alt='logo' height={200}/>
         </div>
         
         <h1 className="text-center text-sm mx-auto text-white">Soluciones tecnológicas en investigación y equipamiento</h1>
