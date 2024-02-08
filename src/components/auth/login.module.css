@@ -97,6 +97,42 @@
     background: #1c0522;
 }
 
+.logoprincipal {
+    /* Tamaño */
+    height: 150px; /* Ajusta el tamaño según tus necesidades */
+    width: auto; /* Mantiene la relación de aspecto original */
+  
+    /* Margen */
+    margin: 20px auto; /* Centra el elemento y agrega espacio alrededor */
+  
+    /* Posicionamiento */
+    position: relative;
+  
+    /* Animación de aparición */
+    animation: aparecer 1s ease-in-out forwards;
+  
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  
+    /* Media queries para ajustar el tamaño en pantallas pequeñas */
+    @media only screen and (max-width: 768px) {
+      height: 100px;
+    }
+  
+    @media only screen and (max-width: 480px) {
+      height: 80px;
+    }
+  }
+  
+
 .sec2
 {
     position: relative;
