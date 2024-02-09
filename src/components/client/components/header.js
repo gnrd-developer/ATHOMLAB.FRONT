@@ -124,9 +124,12 @@ function Header() {
           <Navbar.Brand href="/store">
             <img src={require('../images/logo.png')} alt='logo' height={70}/>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
+
+          <Navbar.Toggle aria-controls="basic-navbar-nav"
+          style={{ color: "white", fontSize: "24px", opacity: 1 }}>
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
+
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
 

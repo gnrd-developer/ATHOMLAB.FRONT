@@ -78,8 +78,8 @@
 
 .pe{
     display: flex;
-    overflow: auto;
-    word-break: break-all;
+    overflow: visible;
+    word-break: keep-all;
     padding: 5px;
     white-space: pre-line;
     font-size: 20px;   /* Color del texto */
