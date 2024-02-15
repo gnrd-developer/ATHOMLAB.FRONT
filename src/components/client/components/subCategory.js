@@ -38,20 +38,22 @@
         {subCategoryList.map(subCategoryList =>
 
 
-          <Grid className={subCategoryStyle.caja} key={subCategoryList.id}>
-          <div className={subCategoryStyle.header}>
-            <h4 className={subCategoryStyle.neon}>{subCategoryList.name}</h4>
-            <h4 className={subCategoryStyle.neon}>{subCategoryList.name}</h4>
-          </div>
-          <div className={subCategoryStyle.cuerpo}>
-            <a href={'https://frontathomlab-production.up.railway.app/store/listado/' 
-            + subCategoryList.name}>{/*https://frontathomlab-production.up.railway.app/, 
+          <a href={'https://frontathomlab-production.up.railway.app/store/listado/' 
+            + subCategoryList.name}
+            className={subCategoryStyle.caja} key={subCategoryList.id}>
+            {/*https://frontathomlab-production.up.railway.app/, 
             http://localhost:3000/*/}
-              <img src={subCategoryList.image} alt=""/>
-            </a>
-          </div>
+
+            <div className={subCategoryStyle.header}>
+              <h4 className={subCategoryStyle.neon}>{subCategoryList.name}</h4>
+              <h4 className={subCategoryStyle.neon}>{subCategoryList.name}</h4>
+            </div>
             
-          </Grid>)
+            <div className={subCategoryStyle.cuerpo}>
+              <img src={subCategoryList.image} alt="img"/>
+            </div>
+            
+          </a>)
         }
       </Grid>
 

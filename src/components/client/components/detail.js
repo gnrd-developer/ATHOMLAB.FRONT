@@ -13,6 +13,7 @@ import {
 import React, { useEffect, useState } from "react";
 import detailStyle from "./detail.module.css";
 import AddIcon from "@mui/icons-material/Add";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import RemoveIcon from "@mui/icons-material/Remove";
 import ProductCard from "./productCard";
 import ClassIcon from "@mui/icons-material/Class";
@@ -247,6 +248,13 @@ function Detail() {
               >
                 Añadir A Orden De Compra
               </Button>
+
+              <IconButton target="_blank" rel="noopener noreferrer" href="https://wa.me/51933504373/?text=Hola,%20Muy%20buenas%20tardes.%20Le%20hablo%20para%20hacerle%20algunas%20consultas" size="large">
+                <Badge>
+                  <WhatsAppIcon color="primary" height={25}/>
+                </Badge>
+              </IconButton>
+
             </div>
             
           </Stack>
