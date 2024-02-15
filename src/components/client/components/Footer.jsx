@@ -57,7 +57,7 @@ const Footer = () => {
               <h6 className="text-uppercase fw-bold mb-4 text-white">ESCRÍBENOS</h6>
               <p className="text-white">
                 <i className="fas fa-envelope me-3"></i>
-                athomlab.pe@gmail.com
+                ventas@athomlab.pe
               </p>
               <p className="text-white"><i className="fas fa-phone me-3"></i> + 51933504373</p>
             </div>
