@@ -102,7 +102,7 @@ function Detail() {
       <Grid container spacing={12}>
 
         {/*AQUI MI PRODUCTO CON FOTO Y DESCRIPCION ETC...*/}
-        <Grid item xs={6} md={12} 
+        <Grid item xs={12} md={12} 
         className="d-flex justify-content-center align-items-center">
 
 
@@ -133,6 +133,7 @@ function Detail() {
               <IconButton target="_blank" rel="noopener noreferrer" href="https://wa.me/51933504373/?text=Hola,%20Muy%20buenas%20tardes.%20Le%20hablo%20para%20hacerle%20algunas%20consultas" size="large">
                 <Badge>
                   <WhatsAppIcon color="primary" height={50}/>
+                  <h5>Hable Por WhatsApp Con Nosotros</h5>
                 </Badge>
               </IconButton>
             </Typography>
@@ -142,7 +143,7 @@ function Detail() {
             </div>
 
 
-            <div className={detailStyle.img_container}>
+            <Grid className={detailStyle.img_container}>
               <img
                 src={
                   product
@@ -152,7 +153,7 @@ function Detail() {
                 alt="product"
                 className={detailStyle.img}
               />
-            </div>
+            </Grid>
 
 
             {/*

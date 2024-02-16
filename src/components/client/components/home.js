@@ -64,24 +64,25 @@ function Home()
             </Typography>
           </div>
 
-          <Grid className={homeStyle.cajaC}>
+          <Grid  className={homeStyle.cajaC}>
           {categoryList.map(categoryItem => (
 
-            <Grid className={homeStyle.caja} key={categoryItem.id}>
+            <a href={'https://frontathomlab-production.up.railway.app/store/subcategory/' + 
+            categoryItem.name} className={homeStyle.caja} key={categoryItem.id}>
+            {/*http://localhost:3000/, https://frontathomlab-production.up.railway.app/*/}
               <div className={homeStyle.header}>
               <h4 className={homeStyle.neon}>{categoryItem.name}</h4>
               <h4 className={homeStyle.neon}>{categoryItem.name}</h4>
               </div>
               <div className={homeStyle.cuerpo}>
-                <a href={'https://frontathomlab-production.up.railway.app/store/subcategory/' + 
-                categoryItem.name}>{/*http://localhost:3000/, https://frontathomlab-production.up.railway.app/*/}
-                  <img src={categoryItem.image} alt=""/>
-                </a>
+                <div>
+                  <img src={categoryItem.image} alt="img"/>
+                </div>
               </div>
-            </Grid>
+            </a>
 
           ))}
-        </Grid>
+          </Grid>
 
           <br></br>
 
