@@ -104,7 +104,7 @@ function Login() {
             className={loginStyles.card}
             justifyContent="center"
             alignItems="center"
-            display={TableCell}
+            display="table-cell"
           >
 
             <Typography variant="h4" component="h2" fontWeight={600}>
