@@ -99,6 +99,7 @@ function Login() {
 
 
         <Stack
+            spacing={1}
             className={loginStyles.card}
             justifyContent="center"
             alignItems="center"
