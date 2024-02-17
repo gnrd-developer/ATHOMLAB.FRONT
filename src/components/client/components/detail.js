@@ -172,6 +172,7 @@ function Detail() {
 
             {/*los botones añadir compra, sumar y restar para la cantidad de productos a llevar*/}
             <div className={detailStyle.info}>
+              
               <div className={detailStyle.action}>
                 <IconButton
                   color="primary"

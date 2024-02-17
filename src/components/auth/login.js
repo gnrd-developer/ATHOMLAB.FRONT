@@ -82,18 +82,17 @@ function Login() {
         <Grid className={loginStyles.cajaC}>
           {categoryList.map(categoryItem => (
 
-            <Grid className={loginStyles.caja} key={categoryItem.id}>
+            <a href={'https://frontathomlab-production.up.railway.app/store/subcategory/' 
+            + categoryItem.name} className={loginStyles.caja} key={categoryItem.id}>
+              {/*http://localhost:3000, https://frontathomlab-production.up.railway.app/store/subcategory/*/}
               <div className={loginStyles.header}>
               <h4 className={loginStyles.neon}>{categoryItem.name}</h4>
               <h4 className={loginStyles.neon}>{categoryItem.name}</h4>
               </div>
               <div className={loginStyles.cuerpo}>
-                <a href={'https://frontathomlab-production.up.railway.app/store/subcategory/' 
-                + categoryItem.name}>{/*http://localhost:3000, https://frontathomlab-production.up.railway.app/store/subcategory/*/}
-                  <img src={categoryItem.image} alt=""/>
-                </a>
+                <img src={categoryItem.image} alt=""/>
               </div>
-            </Grid>
+            </a>
 
           ))}
         </Grid>

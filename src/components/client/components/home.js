@@ -50,7 +50,7 @@ function Home()
                 Athom Lab
               </Typography>
 
-              <Typography variant="p" fontSize={20} component="h2" ml={1} fontWeight={400}>
+              <Typography variant="p" fontSize={30} component="h2" ml={1} fontWeight={500}>
               Soluciones tecnológicas en investigación y equipamiento
               </Typography>
 
@@ -59,8 +59,8 @@ function Home()
           <Divider></Divider>
 
           <div className={homeStyle.title_container}>
-            <Typography variant="span" fontSize={30} component="h2" ml={1} fontWeight={600}>
-              Navega entre las siguientes categorias
+            <Typography variant="span" fontSize={28} component="h2" ml={1} fontWeight={500}>
+              Haz click entre las siguientes categorias
             </Typography>
           </div>
 
