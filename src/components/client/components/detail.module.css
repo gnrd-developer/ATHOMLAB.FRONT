@@ -9,7 +9,7 @@
 }
 
 .img_container {
-    width: 50%;
+    width: 100%;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
@@ -18,8 +18,7 @@
 }
 
 .img {
-    padding: 50px;    
-    width: 100%;
+    padding: 70px;
     /*height: 60%;*/
     object-fit: cover;
     max-width: 100%;
