@@ -102,13 +102,10 @@ function Detail() {
       <Grid container spacing={12}>
 
         {/*AQUI MI PRODUCTO CON FOTO Y DESCRIPCION ETC...*/}
-        <Grid item xs={12} md={12} 
-        className="d-flex justify-content-center align-items-center">
+        <Grid item xs={12} md={12} className="d-flex justify-content-center align-items-center">
 
 
-          <Stack direction="column" alignItems="center" 
-          className={detailStyle.stack} spacing={1} 
-          >
+          <Stack direction="column" alignItems="center" className={detailStyle.stack} spacing={1}>
 
             {roles.length > 1 ? (
               <Button
@@ -276,7 +273,7 @@ function Detail() {
             className={detailStyle.chip}
           />
 
-          <div className="container">
+          <div>
             {relatedProducts.map((related) => (
               <ProductCard product={related} key={related.id} />
             ))}

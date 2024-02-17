@@ -119,6 +119,17 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+    .container {
+        padding-bottom: 50px;
+        background-color: #ffffff;
+        min-height: 100vh;
+        max-width: 120vw;
+        zoom: 0.7;
+        overflow-x: hidden; /*esta linea es importante*/
+        overflow-y: visible; /*esta linea es importante*/
+    }
+
     .stack {
         padding-left: 1rem !important;
         padding-right: 1rem !important;
@@ -139,7 +150,7 @@
     }
 
     .info {
-        display: flex;
+        display: contents;
         justify-content: center;
         align-items: center;
         flex-direction: column;
