@@ -12,7 +12,7 @@ const Footer = () => {
   return (    
     <ModalFooter className="container text-center text-lg-start bg-black text-muted">
 
-      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <section className="justify-content-center justify-content-lg-between p-4 border-bottom">
         <div className="me-5 d-none d-lg-block">
           <span className="text-white">Get connected with us:</span>
         </div>
