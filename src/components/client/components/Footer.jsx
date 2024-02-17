@@ -19,8 +19,6 @@ const Footer = () => {
       </section>
 
       <section>
-
-
         <div className="text-center text-md-start mt-5">
           <div className="row mt-3">
 
@@ -37,7 +35,7 @@ const Footer = () => {
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
-              <h6 className="text-uppercase fw-bold mb-4 text-white">
+              <h6 className="fw-bold mb-4 text-white">
                 Descubre mas aquí ó Conversa con un asistente.
               </h6>
 
@@ -64,8 +62,6 @@ const Footer = () => {
             
           </div>
         </div>
-
-
       </section>
 
       <section>

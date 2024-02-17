@@ -603,6 +603,12 @@ h2{
     flex-direction: column;
     justify-content: space-between;
     }
+
+    .sec2
+    {
+        position: relative;
+        padding: 25px;    
+    }
 }
 
 
