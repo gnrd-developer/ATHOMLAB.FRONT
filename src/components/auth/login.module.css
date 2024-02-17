@@ -14,7 +14,7 @@
     /*max-width: 100vw;*/
     overflow-x: hidden; /*esta linea es importante*/
     overflow-y: hidden; /*esta linea es importante*/
-    background: linear-gradient(#2b1055, #7597de);
+    background: #1c0522;
     /*background-attachment: fixed;*/
     /*background-size: cover;*/
 }
@@ -37,7 +37,7 @@
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: #1c0522;
+    background: linear-gradient(to top, #1c0522, transparent);
     z-index: 1000;
     pointer-events: none;
     transform: translateY(60px);
@@ -66,6 +66,7 @@
 
 .card {
     display: grid;
+    margin: 50px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-items: center;
@@ -78,7 +79,6 @@
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     z-index: 10;
-    margin: 500px;
 }
 
 /*
