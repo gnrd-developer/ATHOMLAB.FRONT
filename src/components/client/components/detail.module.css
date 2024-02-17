@@ -9,18 +9,18 @@
 }
 
 .img_container {
-    width: 100%;
+    width: 60%;
     background-color: #ffffff;
-    display: flex;
+    display: block;
     justify-content: center;
     padding: 1.5rem 0rem 1.5rem 0rem;
     z-index: 10;
 }
 
 .img {
-    padding: 70px;
+    padding: 95px;
     /*height: 60%;*/
-    object-fit: cover;
+    /*object-fit: cover;*/
     max-width: 100%;
     height: inherit;
 }
@@ -32,6 +32,7 @@
     flex-direction: column;
     width: 100%;
     text-align: center;
+    padding-right: 230px;
 }
 
 .stack {

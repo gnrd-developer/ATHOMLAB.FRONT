@@ -106,7 +106,7 @@ function Detail() {
         className="d-flex justify-content-center align-items-center">
 
 
-          <Stack direction="column" alignItems="flex-start" 
+          <Stack direction="column" alignItems="center" 
           className={detailStyle.stack} spacing={1} 
           >
 
