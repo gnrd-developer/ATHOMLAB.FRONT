@@ -5,7 +5,8 @@ import {
   Snackbar,
   Stack,
   TextField,
-  Typography
+  Typography,
+  TableCell
 } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -103,6 +104,7 @@ function Login() {
             className={loginStyles.card}
             justifyContent="center"
             alignItems="center"
+            display={TableCell}
           >
 
             <Typography variant="h4" component="h2" fontWeight={600}>
