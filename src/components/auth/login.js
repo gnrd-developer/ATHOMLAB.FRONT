@@ -167,11 +167,11 @@ function Login() {
 
             </Snackbar>
 
-        </Stack>
-
-        <Footer/>   
+        </Stack>   
 
       </div>{/*este es el div del quienes somos*/}
+
+      <Footer/>
       
     </div>
   );
