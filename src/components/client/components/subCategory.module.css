@@ -41,7 +41,7 @@
 {
     position: relative;
     background-color: #000000;
-    padding: 10px 20px; /* Margen ajustado para mejor respuesta */
+    padding: 90px; /* Margen ajustado para mejor respuesta */
     font-size: 1.5rem; /* Tamaño de fuente adaptable */
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -70,8 +70,8 @@
 .neon
 {
     position: absolute;
-    transform: translate(-30%, -50%);
-    font-size: 7em;
+    transform: translate(-29%, 0%);
+    font-size: large;
     padding: 70px;
     border: none;
 }
@@ -161,8 +161,8 @@
       }
     
       .neon{
-        font-size: 8em; /* Reduce el tamaño de la fuente del texto neón */
-        transform: translate(-35%, -50%);
+        font-size: 5em; /* Reduce el tamaño de la fuente del texto neón */
+        transform: translate(-35%, 0%);
       }
     
       .caja img{
