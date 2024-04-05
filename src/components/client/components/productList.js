@@ -60,7 +60,7 @@ function ProductList()
   }
 
   return(
-    <div className='container'> {/*className={homeStyle.container} */}
+    <div className="container"> {/*className={homeStyle.container} */}
 
           <div className={homeStyle.title_container}>
 
@@ -101,7 +101,7 @@ function ProductList()
             </div>
           </div>
 
-          <Grid className='row'>
+          <Grid className="row">
             {productList.map(productItem =>
 
               <Grid onMouseOver={mostrarAvisoa} onMouseOut={ocultarAvisoa} 
