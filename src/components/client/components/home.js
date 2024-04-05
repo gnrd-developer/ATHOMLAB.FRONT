@@ -54,6 +54,10 @@ function Home()
               Soluciones tecnológicas en investigación y equipamiento
               </Typography>
 
+              <Typography variant="p" fontSize={30} component="h2" ml={1} fontWeight={500}>
+              en investigación y equipamiento
+              </Typography>
+
           </div>
 
           <Divider></Divider>
