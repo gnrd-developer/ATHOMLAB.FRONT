@@ -84,11 +84,11 @@
     -webkit-text-stroke: 1px #257ea7;
 }
 
-.neon:nth-child(2)
+/*.neon:nth-child(2)
 {
     color: #6fd1fe;
     animation: animate 2s ease-in-out infinite;
-}
+}*/
 
 .caja a {
   display: block;

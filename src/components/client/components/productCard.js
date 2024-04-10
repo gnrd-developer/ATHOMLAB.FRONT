@@ -17,7 +17,6 @@ function ProductCard(props) {
                             + product.id + '/' + product.subCategory.name}>
                 <div className={subCategoryStyle.header}>
                     <h4 className={subCategoryStyle.neon}>{product.name}</h4>
-                    <h4 className={subCategoryStyle.neon}>{product.name}</h4>
                 </div>                      
                 <h4 className={subCategoryStyle.categoria}>{product.subCategory.name}</h4>
                 <div className={subCategoryStyle.cuerpo2}>

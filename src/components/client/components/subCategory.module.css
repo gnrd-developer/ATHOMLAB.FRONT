@@ -93,11 +93,11 @@
     text-align: center;
 }
 
-.neon:nth-child(2)
+/*.neon:nth-child(2)
 {
     color: #6fd1fe;
     animation: animate 1s ease-in-out infinite;
-}
+}*/
 
 .caja a {
   display: block;

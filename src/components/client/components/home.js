@@ -76,7 +76,6 @@ function Home()
             {/*http://localhost:3000/, https://frontathomlab-production.up.railway.app/*/}
               <div className={homeStyle.header}>
               <h4 className={homeStyle.neon}>{categoryItem.name}</h4>
-              <h4 className={homeStyle.neon}>{categoryItem.name}</h4>
               </div>
               <div className={homeStyle.cuerpo}>
                 <div>

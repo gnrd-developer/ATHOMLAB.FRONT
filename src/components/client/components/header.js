@@ -122,7 +122,7 @@ function Header() {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/store">
-            <img src={require('../images/logo.png')} alt='logo' height={70}/>
+            <img src={require('../images/logo.png')} alt='logo' height={100}/>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav"

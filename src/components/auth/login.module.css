@@ -266,8 +266,8 @@ h2{
 .header {
     position: relative;
     background-color: #000000;
-    padding: 50px;
-    font-size: 4px;
+    padding: 60px;
+    font-size: 3px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%; /* Agrega esta propiedad para que la cabecera ocupe todo el ancho del card /

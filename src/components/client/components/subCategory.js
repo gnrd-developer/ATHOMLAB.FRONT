@@ -46,7 +46,6 @@
 
             <div className={subCategoryStyle.header}>
               <h4 className={subCategoryStyle.neon}>{subCategoryList.name}</h4>
-              <h4 className={subCategoryStyle.neon}>{subCategoryList.name}</h4>
             </div>
             
             <div className={subCategoryStyle.cuerpo}>
