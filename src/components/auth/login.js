@@ -87,7 +87,6 @@ function Login() {
               {/*http://localhost:3000, https://frontathomlab-production.up.railway.app/store/subcategory/*/}
               <div className={loginStyles.header}>
               <h4 className={loginStyles.neon}>{categoryItem.name}</h4>
-              <h4 className={loginStyles.neon}>{categoryItem.name}</h4>
               </div>
               <div className={loginStyles.cuerpo}>
                 <img src={categoryItem.image} alt=""/>
