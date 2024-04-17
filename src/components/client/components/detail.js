@@ -195,7 +195,7 @@ function Detail() {
 
               <Button variant="contained" className="btn2" 
               onClick={() => {setOpenPDF(true)}}>
-                PDF
+                Ficha Técnica
               </Button>
 
 
